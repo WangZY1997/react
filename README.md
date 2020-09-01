@@ -28,3 +28,6 @@ componentWillMount
  getSnapshotBeforeUpdate
  运行时间点:虚拟DOM数构建完成，真实DOM构建完成，还没有渲染到页面上，通常用于实现附加的DOM操作，设置滚动条，添加动画
  该函数的返回值会作为componentDidUpdate 的第三个参数
+
+ # 传递元素
+ 利用Props.children
