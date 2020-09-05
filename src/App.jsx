@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
-import FromTest from './FromTest'
-export default class App extends Component {
+import React from 'react'
+import CompRef from './Component/CompRef'
 
+export default class App extends React.Component {
     render() {
-        return <FromTest />
+        return (<div>
+            <CompRef/>
+        </div>)
     }
 }
 
