@@ -6,6 +6,9 @@ export default class Comp extends Component {
         this.txt = React.createRef(); //创建ref
         console.log(this.txt);
     }
+    /**
+     * 创建ref，利用React.createRef()
+     */
     handleClick = () => {
         console.log(this);
         this.txt.current.focus()
