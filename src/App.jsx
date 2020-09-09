@@ -1,11 +1,13 @@
 import React from 'react'
-import Test from './Component/Common/Form/Test'
+import TaskContainer from './Component/Task/TaskContainer'
 export default class App extends React.Component {
         render() {
+                console.log('APP render')
                 return (<div>
-                        <Test />
+                        <TaskContainer />
                 </div>)
         }
 }
+
 
 
