@@ -33,4 +33,23 @@ componentWillMount
  利用Props.children
 
 
+# 渲染原理
+-diff算法
+- React 元素：通过React.createElement() 创建的 jsx
+-  例如：
+  ```<div><h1></h1></div>```
+- React节点
+  
+
+
+# 工具
+
+## 严格模式
+StrictMode 本质是一个组件，该组件不进行UI渲染 （React.Fragment）,作用：在渲染内部组件时，发现不合适代码
+- 识别不安全的生命周期
+- 关于使用过时字符串 ref API的警告
+- 关于使用废弃的findDOMNode 方法的警告
+- 检测意外的副作用
+- 
+
  
