@@ -1,13 +1,20 @@
 import React from 'react'
-import TaskContainer from './Component/Task/TaskContainer'
-export default class App extends React.Component {
-        render() {
-                console.log('APP render')
-                return (<div>
-                        <TaskContainer />
-                </div>)
-        }
+import useAllStudent from './MyHooks/useAllStudent'
+function Test() {
+        const stus = useAllStudent()
+        const list = stus && stus.map(v => (<li key={v.id}>{v.name}</li>))
+        return <ul>
+                {list}
+        </ul>
 }
+export default function App() {
+        return (
+               <Test/>
+        )
+}
+
+
+
 
 
 

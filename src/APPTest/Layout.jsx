@@ -1,5 +1,8 @@
 import React from 'react'
-import TreeLayout from './Component/Common/ThreeLayout'
+import TreeLayout from '../Component/Common/ThreeLayout'
+/**
+ * 这是一个布局
+ */
 export default function App() {
     return (
         <div>

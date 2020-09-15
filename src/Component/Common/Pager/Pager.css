@@ -1,0 +1,21 @@
+.item{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    margin: 2px;
+    color:rgb(23,96,121);
+    cursor: pointer;
+
+}
+.item.disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
+.current{
+    margin-left: 12px;
+}
+.item.active{
+    border: none;
+    color: #f40;
+    cursor: pointer;
+}
