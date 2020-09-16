@@ -1,15 +1,22 @@
 import React from 'react'
-import useAllStudent from './MyHooks/useAllStudent'
+import { useState } from 'react'
+import useTimer from './MyHooks/useTimer'
 function Test() {
-        const stus = useAllStudent()
-        const list = stus && stus.map(v => (<li key={v.id}>{v.name}</li>))
-        return <ul>
-                {list}
-        </ul>
+        useTimer(() => {
+                console.log("组件副作用操作")
+        }, 1000)
+        return (<div>
+                组件
+        </div>)
 }
+
 export default function App() {
+        const [visibale, setvisibale] = useState(true)
         return (
-               <Test/>
+                <div>
+                        {visibale ? <Test /> : null}
+                        <button onClick={()=>{setvisibale(!visibale)}}>显示</button>
+                </div>
         )
 }
 
