@@ -8,7 +8,6 @@ export default function usePageStudent( page = 1, limit = 10) {
     useEffect(() => {
         (async function () {
             const resp = await getStudent(page, limit)
-            console.log(resp);
             setResp(resp)
         }())
         return () => { } //清理函数
